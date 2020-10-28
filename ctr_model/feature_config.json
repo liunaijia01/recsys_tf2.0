@@ -1,0 +1,82 @@
+{
+  "USER": {
+    "vector_features": {
+      "age": {
+        "feature_length": 1
+      },
+      "registerTime": {
+        "feature_length": 1
+      },
+      "deviceDaysSinceLastPlay": {
+        "feature_length": 1
+      },
+      "appDaysSinceLastPlay": {
+        "feature_length": 1
+      },
+      "gender": {
+        "feature_length": 3
+      },
+      "vipState": {
+        "feature_length": 4
+      },
+      "deviceType": {
+        "feature_length": 6
+      }
+    },
+    "embedding_features": {
+      "province": {
+        "feature_length":35,
+        "embed_dim": 8
+      }
+    }
+  },
+  "ITEM": {
+    "vector_features": {
+      "context_vector": {
+        "feature_length": 768
+      },
+      "playCntTotal": {
+        "feature_length": 1
+      },
+      "likeCntTotal": {
+        "feature_length": 1
+      },
+      "likeCntRecentDay": {
+        "feature_length": 1
+      },
+      "appPlayCntRecentDay": {
+        "feature_length": 1
+      },
+      "devicePlayCntRecentDay": {
+        "feature_length": 1
+      },
+      "likeCntRecentWeek": {
+        "feature_length": 1
+      },
+      "appPlayCntRecentWeek": {
+        "feature_length": 1
+      },
+      "devicePlayCntRecentWeek": {
+        "feature_length": 1
+      }
+    },
+    "embedding_features": {
+      "keywords": {
+        "feature_length": 11114,
+        "embed_dim": 128
+      },
+      "ageAppropriate": {
+        "feature_length": 16,
+        "embed_dim": 4
+      },
+      "level1Cates": {
+        "feature_length": 15,
+        "embed_dim": 4
+      },
+      "level2Cates": {
+        "feature_length": 90,
+        "embed_dim": 8
+      }
+    }
+  }
+}
